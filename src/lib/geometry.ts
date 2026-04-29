@@ -29,6 +29,12 @@ function round2(n: number): number {
 // ────────────────────────────────────────────────────────────────────
 // computeJump
 // ────────────────────────────────────────────────────────────────────
+//
+// Reference: Trailism/McCormack values assume ground-level launch
+// (height=0). With non-zero lipHeight, range reduces due to energy
+// loss climbing the lip.
+// Example: 24 km/h, 30°, height=0   → range ≈ 4.3 m
+//          24 km/h, 30°, height=0.9 → range ≈ 2.37 m (correct)
 
 export function computeJump(params: JumpCalculatorParams): JumpCalculatorResult {
   const { speedKmh, lipAngleDeg, lipHeightCm, wheelbaseCm } = params;

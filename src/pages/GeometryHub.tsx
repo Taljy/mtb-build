@@ -67,18 +67,18 @@ export default function GeometryHub() {
         <h2 className="display-m text-pitch mb-8">GRUNDLAGEN</h2>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div>
+          <div className="mb-6">
             <Eyebrow>KLOTHOIDE</Eyebrow>
-            <p className="font-serif text-lg italic text-asphalt leading-relaxed mt-2">
+            <p className="font-serif text-lg italic text-asphalt leading-relaxed mt-2 max-w-[65ch]">
               Eine Klothoide ist eine Spirale mit stetig zunehmender Krümmung —
               der bevorzugte Take-off-Verlauf bei Sprüngen. Im Gegensatz zum
               Kreisbogen wird das Bike sanft auf den Lippenwinkel umgelenkt,
               ohne Bucking.
             </p>
           </div>
-          <div>
+          <div className="mb-6">
             <Eyebrow>EFH — EQUIVALENT FALL HEIGHT</Eyebrow>
-            <p className="font-serif text-lg italic text-asphalt leading-relaxed mt-2">
+            <p className="font-serif text-lg italic text-asphalt leading-relaxed mt-2 max-w-[65ch]">
               Equivalent Fall Height misst die senkrecht zur Landung wirkende
               Aufprall-Energie. Schweizer Skiindustrie-Standard: EFH ≤ 1.2 m
               über die gesamte Landefläche. Eine flache Tafel ist deshalb
@@ -86,9 +86,9 @@ export default function GeometryHub() {
               in eine senkrechte Aufprallkomponente.
             </p>
           </div>
-          <div>
+          <div className="mb-6">
             <Eyebrow>BANKING-FORMEL</Eyebrow>
-            <p className="font-serif text-lg italic text-asphalt leading-relaxed mt-2">
+            <p className="font-serif text-lg italic text-asphalt leading-relaxed mt-2 max-w-[65ch]">
               Der theoretische Bankingwinkel folgt aus Radius und
               Geschwindigkeit: α = arctan(v² / g·r). In der Praxis werden
               Anlieger 5–10° flacher gebaut, weil Reibung das System stützt —

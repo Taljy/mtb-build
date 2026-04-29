@@ -57,7 +57,7 @@ export default function App() {
           {/* Burger */}
           <button
             type="button"
-            className="md:hidden text-ink p-1"
+            className="md:hidden text-ink p-3"
             onClick={() => setOpen(true)}
             aria-label="Menü öffnen"
           >
@@ -73,7 +73,7 @@ export default function App() {
             <DrekLogo height={28} />
             <button
               type="button"
-              className="text-ink p-1"
+              className="text-ink p-3"
               onClick={() => setOpen(false)}
               aria-label="Menü schliessen"
             >
