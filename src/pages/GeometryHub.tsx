@@ -70,28 +70,30 @@ export default function GeometryHub() {
           <div>
             <Eyebrow>KLOTHOIDE</Eyebrow>
             <p className="font-serif text-lg italic text-asphalt leading-relaxed mt-2">
-              Der Takeoff folgt keiner Kreiskurve, sondern einer Klothoide —
-              einer Kurve mit linear zunehmendem Krümmungsradius. Das reduziert
-              den abrupten Kraftwechsel am Lip und ermöglicht einen kontrollierten
-              Abflugwinkel.
+              Eine Klothoide ist eine Spirale mit stetig zunehmender Krümmung —
+              der bevorzugte Take-off-Verlauf bei Sprüngen. Im Gegensatz zum
+              Kreisbogen wird das Bike sanft auf den Lippenwinkel umgelenkt,
+              ohne Bucking.
             </p>
           </div>
           <div>
             <Eyebrow>EFH — EQUIVALENT FALL HEIGHT</Eyebrow>
             <p className="font-serif text-lg italic text-asphalt leading-relaxed mt-2">
-              EFH misst die Senkrecht-Komponente der Aufprallgeschwindigkeit
-              als äquivalente Fallhöhe. Unter 1.2 m gilt ein Sprung als sicher.
-              Über 1.5 m steigt das Verletzungsrisiko exponentiell. Die Landungslinie
-              muss der Trajektorie folgen — nicht umgekehrt.
+              Equivalent Fall Height misst die senkrecht zur Landung wirkende
+              Aufprall-Energie. Schweizer Skiindustrie-Standard: EFH ≤ 1.2 m
+              über die gesamte Landefläche. Eine flache Tafel ist deshalb
+              gefährlicher als eine steilere Landung — sie zwingt den Fahrer
+              in eine senkrechte Aufprallkomponente.
             </p>
           </div>
           <div>
-            <Eyebrow>BANKINGFORMEL</Eyebrow>
+            <Eyebrow>BANKING-FORMEL</Eyebrow>
             <p className="font-serif text-lg italic text-asphalt leading-relaxed mt-2">
-              Der theoretische Bankwinkel ergibt sich aus α = atan(v²/g·r). In
-              der Praxis baut man 5–10° flacher: Der Fahrer kann aktiv pushen,
-              der Boden hat Toleranzen, und ein zu steiler Anlieger ist schwer
-              zu verlassen. Minimum 15°, Maximum 55° empfohlen.
+              Der theoretische Bankingwinkel folgt aus Radius und
+              Geschwindigkeit: α = arctan(v² / g·r). In der Praxis werden
+              Anlieger 5–10° flacher gebaut, weil Reibung das System stützt —
+              eine Klothoid-Einleitung von 2.5–3 m vor und nach dem Apex macht
+              die Linie sauber befahrbar.
             </p>
           </div>
         </div>
@@ -104,6 +106,7 @@ export default function GeometryHub() {
               "Lee McCormack — Pump Track Nation",
               "Hubbard & McNeil — Sports Engineering 2015",
               "IMBA Trail Building Guidelines",
+              "Velosolutions Pump Track Standards",
             ].map((s) => (
               <li key={s} className="font-mono text-xs tracking-[0.12em] text-asphalt">
                 — {s}
