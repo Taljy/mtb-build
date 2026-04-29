@@ -1,0 +1,397 @@
+{
+  "kvh-fichte-100x100": {
+    "slug": "kvh-fichte-100x100",
+    "name": "KVH Fichte Pfosten",
+    "spec": "100×100 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 11,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-pfosten-100x100": {
+    "slug": "laerche-pfosten-100x100",
+    "name": "Lärche Pfosten",
+    "spec": "100×100 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 22,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-pfosten-120x120": {
+    "slug": "laerche-pfosten-120x120",
+    "name": "Lärche Pfosten verstärkt",
+    "spec": "120×120 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 32,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-stringer-80x160": {
+    "slug": "laerche-stringer-80x160",
+    "name": "Lärche Stringer",
+    "spec": "80×160 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 18,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-stringer-80x200": {
+    "slug": "laerche-stringer-80x200",
+    "name": "Lärche Stringer schwer",
+    "spec": "80×200 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 28,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-joch-80x160": {
+    "slug": "laerche-joch-80x160",
+    "name": "Lärche Joch",
+    "spec": "80×160 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 28,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-joch-100x240": {
+    "slug": "laerche-joch-100x240",
+    "name": "Lärche Joch schwer",
+    "spec": "100×240 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 42,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-belag-40x300": {
+    "slug": "laerche-belag-40x300",
+    "name": "Lärche Belag breit",
+    "spec": "40×300 mm sägerau",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 28,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-belag-40x200": {
+    "slug": "laerche-belag-40x200",
+    "name": "Lärche Belag mittel",
+    "spec": "40×200 mm sägerau",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 22,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-belag-40x120": {
+    "slug": "laerche-belag-40x120",
+    "name": "Lärche Belag schmal",
+    "spec": "40×120 mm sägerau",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 16,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-riemen-27x120": {
+    "slug": "laerche-riemen-27x120",
+    "name": "Lärchenriemen",
+    "spec": "27×120 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 12,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-riemen-32x140": {
+    "slug": "laerche-riemen-32x140",
+    "name": "Lärchenriemen kräftig",
+    "spec": "32×140 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 14,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-planke-60x240": {
+    "slug": "laerche-planke-60x240",
+    "name": "Lärche Planke",
+    "spec": "60×240 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 38,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "laerche-planke-80x240": {
+    "slug": "laerche-planke-80x240",
+    "name": "Lärche Planke verstärkt",
+    "spec": "80×240 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 52,
+    "source": "Schwere AG",
+    "lastUpdate": "2026-04"
+  },
+  "douglasie-sparren-50x150": {
+    "slug": "douglasie-sparren-50x150",
+    "name": "Douglasie Sparren",
+    "spec": "50×150 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 14,
+    "source": "Holzbau",
+    "lastUpdate": "2026-04"
+  },
+  "douglasie-sparren-80x120": {
+    "slug": "douglasie-sparren-80x120",
+    "name": "Douglasie A-Rahmen Spante",
+    "spec": "80×120 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 22,
+    "source": "Holzbau",
+    "lastUpdate": "2026-04"
+  },
+  "eiche-lagerbock-120x120": {
+    "slug": "eiche-lagerbock-120x120",
+    "name": "Eiche Lagerbock",
+    "spec": "120×120 mm",
+    "category": "holz",
+    "unit": "lfm",
+    "pricePerUnit": 65,
+    "source": "Holzbau",
+    "lastUpdate": "2026-04"
+  },
+  "siebdruck-21": {
+    "slug": "siebdruck-21",
+    "name": "Siebdruckplatte",
+    "spec": "21 mm Marine",
+    "category": "holz",
+    "unit": "m2",
+    "pricePerUnit": 95,
+    "source": "Holzhandel",
+    "lastUpdate": "2026-04"
+  },
+  "siebdruck-18": {
+    "slug": "siebdruck-18",
+    "name": "Siebdruckplatte dünn",
+    "spec": "18 mm",
+    "category": "holz",
+    "unit": "m2",
+    "pricePerUnit": 78,
+    "source": "Holzhandel",
+    "lastUpdate": "2026-04"
+  },
+  "multiplex-spanten-cnc-mini": {
+    "slug": "multiplex-spanten-cnc-mini",
+    "name": "MDF/Multiplex Spante CNC klein",
+    "spec": "18 mm bis 60 cm",
+    "category": "holz",
+    "unit": "stk",
+    "pricePerUnit": 45,
+    "source": "Eigene Schreinerei",
+    "lastUpdate": "2026-04"
+  },
+  "multiplex-spanten-cnc-mittel": {
+    "slug": "multiplex-spanten-cnc-mittel",
+    "name": "MDF/Multiplex Spante CNC mittel",
+    "spec": "18 mm bis 100 cm",
+    "category": "holz",
+    "unit": "stk",
+    "pricePerUnit": 55,
+    "source": "Eigene Schreinerei",
+    "lastUpdate": "2026-04"
+  },
+  "multiplex-spanten-cnc-gross": {
+    "slug": "multiplex-spanten-cnc-gross",
+    "name": "MDF/Multiplex Spante CNC gross",
+    "spec": "18 mm über 100 cm",
+    "category": "holz",
+    "unit": "stk",
+    "pricePerUnit": 65,
+    "source": "Eigene Schreinerei",
+    "lastUpdate": "2026-04"
+  },
+  "multiplex-birke-12": {
+    "slug": "multiplex-birke-12",
+    "name": "Birken-Multiplex",
+    "spec": "12 mm gebogen",
+    "category": "holz",
+    "unit": "m2",
+    "pricePerUnit": 58,
+    "source": "Holzhandel",
+    "lastUpdate": "2026-04"
+  },
+
+  "spax-a4-6x120": {
+    "slug": "spax-a4-6x120",
+    "name": "Spax/Heco A4 Vollgewinde",
+    "spec": "6×120 mm",
+    "category": "schraube",
+    "unit": "kg",
+    "pricePerUnit": 38,
+    "source": "Eurotec/Heco/Spax",
+    "lastUpdate": "2026-04"
+  },
+  "spax-a4-mix": {
+    "slug": "spax-a4-mix",
+    "name": "Spax A4 Vollgewinde Mix",
+    "spec": "5×60 bis 8×240 mm",
+    "category": "schraube",
+    "unit": "kg",
+    "pricePerUnit": 38,
+    "source": "Eurotec/Heco/Spax",
+    "lastUpdate": "2026-04"
+  },
+  "schrauben-beschlaege-a4": {
+    "slug": "schrauben-beschlaege-a4",
+    "name": "Schrauben/Beschläge A4 gemischt",
+    "spec": "Strong-Tie Edelstahl",
+    "category": "beschlag",
+    "unit": "kg",
+    "pricePerUnit": 50,
+    "source": "Simpson Strong-Tie",
+    "lastUpdate": "2026-04"
+  },
+
+  "krinner-u68-600": {
+    "slug": "krinner-u68-600",
+    "name": "Krinner Schraubfundament",
+    "spec": "U68×600",
+    "category": "fundament",
+    "unit": "stk",
+    "pricePerUnit": 55,
+    "source": "Krinner CH",
+    "lastUpdate": "2026-04"
+  },
+  "punktfundament-c25": {
+    "slug": "punktfundament-c25",
+    "name": "Punktfundament Beton",
+    "spec": "C25/30, 40×40×60 cm + H-Anker",
+    "category": "fundament",
+    "unit": "stk",
+    "pricePerUnit": 95,
+    "source": "Eigenbau",
+    "lastUpdate": "2026-04"
+  },
+  "erdspiess-stahl": {
+    "slug": "erdspiess-stahl",
+    "name": "Erdspiess verzinkt",
+    "spec": "60 cm",
+    "category": "fundament",
+    "unit": "stk",
+    "pricePerUnit": 18,
+    "source": "Baumarkt",
+    "lastUpdate": "2026-04"
+  },
+
+  "stahlwinkel-l50": {
+    "slug": "stahlwinkel-l50",
+    "name": "Stahlwinkel verzinkt",
+    "spec": "L50×50×5 mm",
+    "category": "armierung",
+    "unit": "lfm",
+    "pricePerUnit": 28,
+    "source": "Stahlhandel",
+    "lastUpdate": "2026-04"
+  },
+  "streckmetall-verzinkt": {
+    "slug": "streckmetall-verzinkt",
+    "name": "Streckmetall verzinkt",
+    "spec": "30×10 mm",
+    "category": "armierung",
+    "unit": "m2",
+    "pricePerUnit": 45,
+    "source": "Stahlhandel",
+    "lastUpdate": "2026-04"
+  },
+
+  "antirutsch-quarzsand": {
+    "slug": "antirutsch-quarzsand",
+    "name": "Antirutsch 2K-Epoxid + Quarzsand",
+    "spec": "R11+ Klasse",
+    "category": "antirutsch",
+    "unit": "m2",
+    "pricePerUnit": 35,
+    "source": "Layer/Bekateq",
+    "lastUpdate": "2026-04"
+  },
+  "antirutsch-owatrol": {
+    "slug": "antirutsch-owatrol",
+    "name": "Owatrol AntiSlip transparent",
+    "spec": "Holz-Coating",
+    "category": "antirutsch",
+    "unit": "m2",
+    "pricePerUnit": 22,
+    "source": "Owatrol",
+    "lastUpdate": "2026-04"
+  },
+  "antirutsch-bitumen": {
+    "slug": "antirutsch-bitumen",
+    "name": "Bitumen-Dachschindeln",
+    "spec": "leicht austauschbar",
+    "category": "antirutsch",
+    "unit": "m2",
+    "pricePerUnit": 12,
+    "source": "Baumarkt",
+    "lastUpdate": "2026-04"
+  },
+
+  "stahlachse-32": {
+    "slug": "stahlachse-32",
+    "name": "Stahlachse verzinkt",
+    "spec": "Ø 32 mm × 600",
+    "category": "spezial",
+    "unit": "stk",
+    "pricePerUnit": 45,
+    "source": "Stahlhandel",
+    "lastUpdate": "2026-04"
+  },
+  "stahlachse-38": {
+    "slug": "stahlachse-38",
+    "name": "Stahlachse verzinkt schwer",
+    "spec": "Ø 38 mm × 600",
+    "category": "spezial",
+    "unit": "stk",
+    "pricePerUnit": 65,
+    "source": "Stahlhandel",
+    "lastUpdate": "2026-04"
+  },
+  "pom-buchse-32": {
+    "slug": "pom-buchse-32",
+    "name": "POM-Buchse",
+    "spec": "Ø 32/42 mm",
+    "category": "spezial",
+    "unit": "stk",
+    "pricePerUnit": 18,
+    "source": "Maschinenhandel",
+    "lastUpdate": "2026-04"
+  },
+  "bronze-buchse-38": {
+    "slug": "bronze-buchse-38",
+    "name": "Bronzebuchse schwer",
+    "spec": "Ø 38/48 mm",
+    "category": "spezial",
+    "unit": "stk",
+    "pricePerUnit": 32,
+    "source": "Maschinenhandel",
+    "lastUpdate": "2026-04"
+  },
+  "gummi-vibrationsdaempfer": {
+    "slug": "gummi-vibrationsdaempfer",
+    "name": "Gummi-Vibrationsdämpfer",
+    "spec": "Ø 50 mm",
+    "category": "spezial",
+    "unit": "stk",
+    "pricePerUnit": 12,
+    "source": "Industriehandel",
+    "lastUpdate": "2026-04"
+  }
+}

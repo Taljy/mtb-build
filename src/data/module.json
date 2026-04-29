@@ -1,0 +1,1336 @@
+[
+  {
+    "slug": "skinny",
+    "number": "M01",
+    "name": "SKINNY",
+    "nameLong": "Skinny / Wood Path / Balkenbahn",
+    "category": "balance",
+    "tagline": "Der archetypische Holz-Trick. Günstig, modular, ehrlich.",
+    "description": "Schmale erhöhte Balkenbahn aus Lärchenstringern auf Pfosten. Lehrt Linienführung, Blickführung und Trail-Geduld. Perfektes Schreinerei-Produkt mit linearer Skill-Progression über Breite und Höhe.",
+    "variants": [
+      {
+        "level": "anfaenger",
+        "dimensions": { "length": 600, "width": 30, "height": 30, "radius": null, "angle": null },
+        "geometry": { "type": "skinny", "beltWidth": 30, "beamHeight": 30, "hasCamber": false, "cambeRadius": null },
+        "recommendedSpeed": { "min": 5, "max": 10 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x160", "quantity": 12 },
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 4 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x300", "quantity": 6 },
+            { "category": "verbindung", "materialSlug": "spax-a4-6x120", "quantity": 1 }
+          ],
+          "notes": "Ohne Fundament. Punktfundament zusätzlich ca. CHF 80–160."
+        },
+        "safetyClearance": { "sides": 1.5, "behind": 1.5, "notes": null },
+        "characterNote": "30 cm Breite verzeiht alles. Ideal für die ersten 20 Kontakte."
+      },
+      {
+        "level": "mittel",
+        "dimensions": { "length": 800, "width": 20, "height": 60, "radius": null, "angle": null },
+        "geometry": { "type": "skinny", "beltWidth": 20, "beamHeight": 60, "hasCamber": true, "cambeRadius": 8 },
+        "recommendedSpeed": { "min": 8, "max": 14 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x160", "quantity": 16 },
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 6 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x200", "quantity": 8 },
+            { "category": "verbindung", "materialSlug": "spax-a4-6x120", "quantity": 1.5 }
+          ],
+          "notes": null
+        },
+        "safetyClearance": { "sides": 2, "behind": 2, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "fortgeschritten",
+        "dimensions": { "length": 1200, "width": 12, "height": 120, "radius": null, "angle": null },
+        "geometry": { "type": "skinny", "beltWidth": 12, "beamHeight": 120, "hasCamber": true, "cambeRadius": 6 },
+        "recommendedSpeed": { "min": 10, "max": 16 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x160", "quantity": 24 },
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 10 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x120", "quantity": 12 },
+            { "category": "verbindung", "materialSlug": "spax-a4-6x120", "quantity": 2 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 6 }
+          ],
+          "notes": "Über 1.2 m Höhe verlangt EN 14974 Brüstungen. 120 cm bewusst nicht überschritten."
+        },
+        "safetyClearance": { "sides": 2.5, "behind": 2.5, "notes": "Sturzraum links/rechts wichtig — schmale Skinnies kippen unkontrolliert." },
+        "characterNote": "Camber + 12 cm Belag. Hier zeigt sich, wer wirklich Linie fahren kann."
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 100,
+      "workshopParts": ["Stringer-Module à 2.0–2.4 m", "Pfosten zugeschnitten", "Belag-Bohlen zugeschnitten und vorgebohrt"],
+      "onSiteParts": ["Pfosten in Krinner-Schraubfundament", "Module verschrauben"],
+      "cncAdvantage": false,
+      "cncNote": "Reine Schreinerarbeit, kein CNC-Vorteil. Skill-Progression über Breitenstaffelung der Bohlen."
+    },
+    "foundation": ["krinner", "punktfundament", "erdspiess"],
+    "foundationNote": "Krinner-Schraubfundament als Standard. Bei dauerhafter Anlage Punktfundament 30×30×60 cm.",
+    "safety": {
+      "guardrailRequiredFrom": 120,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "saegerau",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 1,
+    "references": ["IMBA Trail Building Guidelines", "Cutlaps DIY Plans"],
+    "tags": ["balance", "einsteiger-tauglich", "schreinerei-100"]
+  },
+
+  {
+    "slug": "wippe",
+    "number": "M02",
+    "name": "WIPPE",
+    "nameLong": "Teeter-Totter / Wippe",
+    "category": "transition",
+    "tagline": "Statisches Element wird dynamisch. Gewichtsverlagerung als Lernziel.",
+    "description": "Drehbar gelagerte Planke mit aussermittigem Drehpunkt (60/40), kippt nach Befahrung wieder in Anfahrtsstellung. Lehrt Balance, Geschwindigkeitskontrolle und das Spüren des Schwerpunkts. Vollständig in der Schreinerei vorfertigbar.",
+    "variants": [
+      {
+        "level": "anfaenger",
+        "dimensions": { "length": 270, "width": 40, "height": 30, "radius": null, "angle": 12 },
+        "geometry": { "type": "teeter", "totalLength": 270, "pivotRatio": "60/40", "pivotHeight": 30, "approachAngle": 12 },
+        "recommendedSpeed": { "min": 6, "max": 10 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "eiche-lagerbock-120x120", "quantity": 1.2 },
+            { "category": "tragwerk", "materialSlug": "laerche-planke-60x240", "quantity": 2.7 },
+            { "category": "belag", "materialSlug": "laerche-riemen-32x140", "quantity": 6 },
+            { "category": "spezial", "materialSlug": "stahlachse-32", "quantity": 1 },
+            { "category": "spezial", "materialSlug": "pom-buchse-32", "quantity": 2 },
+            { "category": "spezial", "materialSlug": "gummi-vibrationsdaempfer", "quantity": 2 },
+            { "category": "verbindung", "materialSlug": "schrauben-beschlaege-a4", "quantity": 1 }
+          ],
+          "notes": null
+        },
+        "safetyClearance": { "sides": 1.5, "behind": 2, "notes": "Gummidämpfer am Endpunkt zwingend, sonst scheppert es." },
+        "characterNote": null
+      },
+      {
+        "level": "mittel",
+        "dimensions": { "length": 360, "width": 35, "height": 45, "radius": null, "angle": 20 },
+        "geometry": { "type": "teeter", "totalLength": 360, "pivotRatio": "60/40", "pivotHeight": 45, "approachAngle": 20 },
+        "recommendedSpeed": { "min": 8, "max": 12 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "eiche-lagerbock-120x120", "quantity": 1.4 },
+            { "category": "tragwerk", "materialSlug": "laerche-planke-60x240", "quantity": 3.6 },
+            { "category": "belag", "materialSlug": "laerche-riemen-32x140", "quantity": 8 },
+            { "category": "spezial", "materialSlug": "stahlachse-32", "quantity": 1 },
+            { "category": "spezial", "materialSlug": "pom-buchse-32", "quantity": 2 },
+            { "category": "spezial", "materialSlug": "gummi-vibrationsdaempfer", "quantity": 2 },
+            { "category": "verbindung", "materialSlug": "schrauben-beschlaege-a4", "quantity": 1.5 }
+          ],
+          "notes": null
+        },
+        "safetyClearance": { "sides": 2, "behind": 2.5, "notes": null },
+        "characterNote": "Plankenmitte mit Sandwich-Verstärkung 30 cm beidseits des Drehpunkts. Sonst federt es zu stark."
+      },
+      {
+        "level": "fortgeschritten",
+        "dimensions": { "length": 480, "width": 30, "height": 60, "radius": null, "angle": 25 },
+        "geometry": { "type": "teeter", "totalLength": 480, "pivotRatio": "60/40", "pivotHeight": 60, "approachAngle": 25 },
+        "recommendedSpeed": { "min": 10, "max": 14 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "eiche-lagerbock-120x120", "quantity": 1.6 },
+            { "category": "tragwerk", "materialSlug": "laerche-planke-80x240", "quantity": 4.8 },
+            { "category": "belag", "materialSlug": "laerche-riemen-32x140", "quantity": 11 },
+            { "category": "spezial", "materialSlug": "stahlachse-38", "quantity": 1 },
+            { "category": "spezial", "materialSlug": "bronze-buchse-38", "quantity": 2 },
+            { "category": "spezial", "materialSlug": "gummi-vibrationsdaempfer", "quantity": 2 },
+            { "category": "verbindung", "materialSlug": "schrauben-beschlaege-a4", "quantity": 2 }
+          ],
+          "notes": null
+        },
+        "safetyClearance": { "sides": 2.5, "behind": 3, "notes": null },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 100,
+      "workshopParts": ["Lagerbock komplett vormontiert", "Planke mit Belag und Sandwich-Verstärkung", "Achse und Buchsen vormontiert"],
+      "onSiteParts": ["Lagerbock auf Punktfundament setzen", "Achse durchstecken", "Anschlag justieren"],
+      "cncAdvantage": false,
+      "cncNote": null
+    },
+    "foundation": ["punktfundament"],
+    "foundationNote": "Drehpunkt ist statisch kritisch — Punktfundament Beton C25/30, mind. 40×40×60 cm.",
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "saegerau",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 1,
+    "references": ["Singletracks Teeter Tutorial", "Cutlaps DIY Wippe"],
+    "tags": ["transition", "balance", "schreinerei-100", "klassiker"]
+  },
+
+  {
+    "slug": "low-flat-box",
+    "number": "M03",
+    "name": "LOW FLAT BOX",
+    "nameLong": "Low Flat Box",
+    "category": "transition",
+    "tagline": "Tiefer Einstieg. Maximale Modularität, minimaler Aufwand.",
+    "description": "Sehr einfaches und sehr modulares Element — flache Box mit beidseitigen Auffahrtsrampen. Lärchen-Rahmen, Siebdruck-Belag, lose mit Erdspiessen aufgestellt. Perfekt als erstes Werkstatt-Stück und für Skill-Progression durch Linienwahl.",
+    "variants": [
+      {
+        "level": "anfaenger",
+        "dimensions": { "length": 160, "width": 80, "height": 18, "radius": null, "angle": null },
+        "geometry": null,
+        "recommendedSpeed": { "min": 8, "max": 14 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x160", "quantity": 6 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 1.5 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 0.8 },
+            { "category": "fundament", "materialSlug": "erdspiess-stahl", "quantity": 4 }
+          ],
+          "notes": "Auffahrt beidseitig integriert."
+        },
+        "safetyClearance": { "sides": 1, "behind": 1.5, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "mittel",
+        "dimensions": { "length": 250, "width": 60, "height": 30, "radius": null, "angle": null },
+        "geometry": null,
+        "recommendedSpeed": { "min": 10, "max": 16 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x160", "quantity": 9 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 2.2 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 1.2 },
+            { "category": "fundament", "materialSlug": "erdspiess-stahl", "quantity": 4 }
+          ],
+          "notes": "Einseitiger Drop (Rolldown) als Variante."
+        },
+        "safetyClearance": { "sides": 1.5, "behind": 2, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "fortgeschritten",
+        "dimensions": { "length": 380, "width": 45, "height": 45, "radius": null, "angle": null },
+        "geometry": null,
+        "recommendedSpeed": { "min": 14, "max": 20 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x160", "quantity": 14 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 3.5 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 1.8 },
+            { "category": "fundament", "materialSlug": "erdspiess-stahl", "quantity": 4 }
+          ],
+          "notes": "Beidseitig Drop mit 45 cm."
+        },
+        "safetyClearance": { "sides": 2, "behind": 2.5, "notes": null },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 100,
+      "workshopParts": ["Komplettes Modul vormontiert", "Rampen integriert", "Belag mit Antirutsch-Coating"],
+      "onSiteParts": ["Platzieren", "4 Erdspiesse setzen"],
+      "cncAdvantage": false,
+      "cncNote": "80–120 kg Eigengewicht — von zwei Personen tragbar."
+    },
+    "foundation": ["erdspiess", "lose"],
+    "foundationNote": "Eigengewicht reicht in der Regel. Erdspiesse als Sicherung gegen Verrutschen.",
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "antislip-coating",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 1,
+    "references": ["IMBA Wood Features"],
+    "tags": ["transition", "einsteiger-tauglich", "schreinerei-100", "transportabel"]
+  },
+
+  {
+    "slug": "mini-kicker",
+    "number": "M04",
+    "name": "MINI KICKER",
+    "nameLong": "Mini Kicker / Absprungrampe",
+    "category": "sprung",
+    "tagline": "Erste Sprünge. Klothoid-Profil aus dem CNC-Tisch.",
+    "description": "Freistehende Absprungrampe mit gebogenem Take-off. CNC-geschnittene Multiplex-Spanten ergeben ein präzises Klothoid-Profil — Marios Schreinerei-Vorteil gegenüber DIY-Bauten. Drei Höhenstufen (54/70/120 cm) nach Cutlaps-Standard.",
+    "variants": [
+      {
+        "level": "anfaenger",
+        "dimensions": { "length": 180, "width": 80, "height": 54, "radius": null, "angle": 28 },
+        "geometry": { "type": "jump", "lipHeight": 54, "lipAngle": 28, "lipFlatLength": 25, "jumpDistance": 1.8, "takeoffShape": "klothoide", "takeoffRadius": null },
+        "recommendedSpeed": { "min": 12, "max": 16 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-mini", "quantity": 5 },
+            { "category": "tragwerk", "materialSlug": "kvh-fichte-100x100", "quantity": 3 },
+            { "category": "belag", "materialSlug": "siebdruck-18", "quantity": 1.5 },
+            { "category": "armierung", "materialSlug": "stahlwinkel-l50", "quantity": 1 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 0.8 },
+            { "category": "fundament", "materialSlug": "erdspiess-stahl", "quantity": 4 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 1.5 }
+          ],
+          "notes": "Lippenkante mit Stahlwinkel armiert."
+        },
+        "safetyClearance": { "sides": 1.5, "behind": 3, "notes": "3 m Sturzraum hinter Lip." },
+        "characterNote": null
+      },
+      {
+        "level": "mittel",
+        "dimensions": { "length": 230, "width": 80, "height": 70, "radius": null, "angle": 30 },
+        "geometry": { "type": "jump", "lipHeight": 70, "lipAngle": 30, "lipFlatLength": 30, "jumpDistance": 2.5, "takeoffShape": "klothoide", "takeoffRadius": null },
+        "recommendedSpeed": { "min": 16, "max": 20 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-mittel", "quantity": 5 },
+            { "category": "tragwerk", "materialSlug": "kvh-fichte-100x100", "quantity": 4 },
+            { "category": "belag", "materialSlug": "siebdruck-18", "quantity": 2 },
+            { "category": "armierung", "materialSlug": "stahlwinkel-l50", "quantity": 1 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 1 },
+            { "category": "fundament", "materialSlug": "erdspiess-stahl", "quantity": 4 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 2 }
+          ],
+          "notes": null
+        },
+        "safetyClearance": { "sides": 2, "behind": 3.5, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "fortgeschritten",
+        "dimensions": { "length": 320, "width": 80, "height": 120, "radius": null, "angle": 45 },
+        "geometry": { "type": "jump", "lipHeight": 120, "lipAngle": 45, "lipFlatLength": 40, "jumpDistance": 4.6, "takeoffShape": "klothoide", "takeoffRadius": null },
+        "recommendedSpeed": { "min": 22, "max": 26 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-gross", "quantity": 5 },
+            { "category": "tragwerk", "materialSlug": "kvh-fichte-100x100", "quantity": 6 },
+            { "category": "belag", "materialSlug": "siebdruck-18", "quantity": 3 },
+            { "category": "armierung", "materialSlug": "stahlwinkel-l50", "quantity": 1.2 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 1.5 },
+            { "category": "fundament", "materialSlug": "erdspiess-stahl", "quantity": 4 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 3 }
+          ],
+          "notes": "45° Big-Kicker — braucht Speed und Mut."
+        },
+        "safetyClearance": { "sides": 2.5, "behind": 5, "notes": null },
+        "characterNote": "Cutlaps Big-Kicker-Geometrie. Statiknachweis empfohlen."
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 100,
+      "workshopParts": ["CNC-Spanten geschnitten", "Längsverbinder zugesägt", "Belag bog-laminiert", "Lippenarmierung montiert"],
+      "onSiteParts": ["Platzieren", "Erdspiesse setzen"],
+      "cncAdvantage": true,
+      "cncNote": "Klothoid-Spanten exakt reproduzierbar — der Schreinerei-Vorteil."
+    },
+    "foundation": ["lose", "erdspiess"],
+    "foundationNote": "Bei Big-Kicker (120 cm) zusätzlich 2 Krinner für Standsicherheit.",
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": true,
+      "edgeArmorNote": "Lippenkante mit Stahlwinkel L50×50×5 mm armieren. Splittert sonst nach 200 Sprüngen aus.",
+      "antiSlip": "epoxid-quarzsand",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 1,
+    "references": ["Cutlaps Free Kicker Plans", "Trailism Jump Building Guide"],
+    "tags": ["sprung", "klothoide", "schreinerei-vorteil", "transportabel"]
+  },
+
+  {
+    "slug": "drop-30",
+    "number": "M05",
+    "name": "DROP 30",
+    "nameLong": "Drop 30 cm",
+    "category": "drop",
+    "tagline": "Erster Drop. Lippe horizontal, Landung sanft.",
+    "description": "Plattform mit horizontaler oder leicht negativer Lippe (-2°) und sanfter Landungsneigung 20–25°. Auslauf 2 m geneigt, dann flach. Einstiegs-Drop für die ersten Drop-Erfahrungen — ohne Plattform-Brüstung möglich, da unter EN-14974-Schwelle.",
+    "variants": [
+      {
+        "level": "anfaenger",
+        "dimensions": { "length": 200, "width": 80, "height": 30, "radius": null, "angle": -2 },
+        "geometry": { "type": "drop", "dropHeight": 30, "lipAngle": -2, "lipLength": 100, "landingAngle": 22, "landingLength": 2.0, "knuckleDistance": 0.5 },
+        "recommendedSpeed": { "min": 8, "max": 12 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 4 },
+            { "category": "tragwerk", "materialSlug": "laerche-joch-80x160", "quantity": 6 },
+            { "category": "belag", "materialSlug": "laerche-riemen-27x120", "quantity": 14 },
+            { "category": "armierung", "materialSlug": "stahlwinkel-l50", "quantity": 0.8 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 1.2 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 4 }
+          ],
+          "notes": "Plattform 80 cm × 100 cm + Auflauframpe."
+        },
+        "safetyClearance": { "sides": 1.5, "behind": 2.5, "notes": null },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 90,
+      "workshopParts": ["Plattform vormontiert", "Auflauframpe als Modul", "Lippenarmierung montiert"],
+      "onSiteParts": ["4 Krinner setzen", "Pfosten verschrauben", "Module aufsetzen"],
+      "cncAdvantage": false,
+      "cncNote": null
+    },
+    "foundation": ["krinner", "punktfundament"],
+    "foundationNote": "Krinner reicht für 30 cm Drop. Bei dauerhafter Anlage Punktfundament.",
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": true,
+      "edgeArmorNote": "Vorderkante mit Stahlwinkel L50×50×5 mm verzinkt als Kantenschutz.",
+      "antiSlip": "saegerau",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 3,
+    "references": ["IMBA Drop Standards", "Trailism Drop Geometry"],
+    "tags": ["drop", "einsteiger-tauglich", "schreinerei-90"]
+  },
+
+  {
+    "slug": "drop-60",
+    "number": "M06",
+    "name": "DROP 60",
+    "nameLong": "Drop 60 cm",
+    "category": "drop",
+    "tagline": "Mittlerer Drop. Plattform-Brüstung wird Pflicht.",
+    "description": "Plattform 60 cm hoch — laut EN 14974 sind ab dieser Höhe Brüstungen 1.2 m an Seiten und hinten Pflicht. Lippe horizontal/-5°, Landung 28–32° auf 3 m Länge. Bypass-Linie für Anfänger empfohlen.",
+    "variants": [
+      {
+        "level": "mittel",
+        "dimensions": { "length": 280, "width": 80, "height": 60, "radius": null, "angle": -3 },
+        "geometry": { "type": "drop", "dropHeight": 60, "lipAngle": -3, "lipLength": 120, "landingAngle": 30, "landingLength": 3.0, "knuckleDistance": 1.2 },
+        "recommendedSpeed": { "min": 12, "max": 18 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 8 },
+            { "category": "tragwerk", "materialSlug": "laerche-joch-80x160", "quantity": 12 },
+            { "category": "belag", "materialSlug": "laerche-riemen-27x120", "quantity": 22 },
+            { "category": "armierung", "materialSlug": "stahlwinkel-l50", "quantity": 1.2 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 2.5 },
+            { "category": "fundament", "materialSlug": "punktfundament-c25", "quantity": 4 }
+          ],
+          "notes": "Inkl. Plattform-Brüstung 1.2 m an Seiten und hinten."
+        },
+        "safetyClearance": { "sides": 2.5, "behind": 4, "notes": "Bypass-Linie für Anfänger zwingend." },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 90,
+      "workshopParts": ["Plattform mit Brüstung vormontiert", "Auflauframpe als Modul", "Landungsschräge"],
+      "onSiteParts": ["4 Punktfundamente setzen", "Pfosten einbetonieren", "Box aufsetzen"],
+      "cncAdvantage": false,
+      "cncNote": null
+    },
+    "foundation": ["punktfundament"],
+    "foundationNote": "Punktfundament Beton C25/30 mit H-Anker — bei 60 cm Plattformhöhe nicht mehr verhandelbar.",
+    "safety": {
+      "guardrailRequiredFrom": 60,
+      "edgeArmor": true,
+      "edgeArmorNote": "Vorderkante Stahlwinkel L50×50×5 mm.",
+      "antiSlip": "saegerau",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": true
+    },
+    "buildPhase": 3,
+    "references": ["EN 14974", "BFU 2.011"],
+    "tags": ["drop", "mittel", "bruestung-pflicht"]
+  },
+
+  {
+    "slug": "drop-100",
+    "number": "M07",
+    "name": "DROP 100",
+    "nameLong": "Drop 100 cm",
+    "category": "drop",
+    "tagline": "Grosser Drop. Statiknachweis SIA 265 zwingend.",
+    "description": "1 m hohe Plattform, Lippe -5°, Landung 32–38° auf 4–4.5 m. Knuckle 2 m hinter Lip. Brüstung 1.2 m überall ausser Lip-Seite. Statiknachweis durch Bauingenieur SIA 265 ist nicht verhandelbar — dynamische Belastung mit 16–22 km/h Drop-In.",
+    "variants": [
+      {
+        "level": "fortgeschritten",
+        "dimensions": { "length": 400, "width": 80, "height": 100, "radius": null, "angle": -5 },
+        "geometry": { "type": "drop", "dropHeight": 100, "lipAngle": -5, "lipLength": 140, "landingAngle": 35, "landingLength": 4.5, "knuckleDistance": 2.0 },
+        "recommendedSpeed": { "min": 16, "max": 22 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-120x120", "quantity": 12 },
+            { "category": "tragwerk", "materialSlug": "laerche-joch-100x240", "quantity": 18 },
+            { "category": "belag", "materialSlug": "laerche-riemen-27x120", "quantity": 32 },
+            { "category": "armierung", "materialSlug": "stahlwinkel-l50", "quantity": 1.5 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 4 },
+            { "category": "fundament", "materialSlug": "punktfundament-c25", "quantity": 6 }
+          ],
+          "notes": "Inkl. Plattform-Brüstung 1.2 m. Statiknachweis ca. CHF 800–1500 zusätzlich."
+        },
+        "safetyClearance": { "sides": 3, "behind": 6, "notes": "Bypass-Linie zwingend. Sturzraum streng." },
+        "characterNote": "Über 1 m Drop ohne Statiknachweis bauen ist im Schadensfall existenzbedrohend."
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 85,
+      "workshopParts": ["Plattform mit Brüstung", "Auflauframpe als Modul"],
+      "onSiteParts": ["6 Punktfundamente C25/30", "Pfosten einbetonieren", "Box aufsetzen", "Erdarbeiten Landung"],
+      "cncAdvantage": false,
+      "cncNote": null
+    },
+    "foundation": ["punktfundament"],
+    "foundationNote": "Punktfundament 50×50×80 cm mit H-Anker A4. Frostgrenze beachten.",
+    "safety": {
+      "guardrailRequiredFrom": 100,
+      "edgeArmor": true,
+      "edgeArmorNote": "Vorderkante Stahlwinkel L50×50×5 mm zwingend.",
+      "antiSlip": "saegerau",
+      "staticProofRequired": true,
+      "staticProofReason": "1 m Plattform mit dynamischer Drop-In-Belastung. SIA 265 Tragsicherheitsnachweis durch Holzbau-Ingenieur.",
+      "bypassRecommended": true
+    },
+    "buildPhase": 5,
+    "references": ["SIA 265 Holzbau", "EN 14974", "IMBA Drop Standards"],
+    "tags": ["drop", "fortgeschritten", "statiknachweis", "phase-5"]
+  },
+
+  {
+    "slug": "tabletop",
+    "number": "M08",
+    "name": "TABLETOP",
+    "nameLong": "Tabletop mit Holz-Anliegern",
+    "category": "sprung",
+    "tagline": "Der Lernsprung. Tisch verzeiht, Lippe und Landung lehren.",
+    "description": "Drei Module — Take-off, Tisch, Landung — alle in der Schreinerei vorgefertigt, vor Ort verschraubt. Lippe und Knuckle mit Stahlwinkel armiert. Übergangs-Anlieger an Ein- und Ausgang machen den Tabletop zur Flow-Sequenz. Zentrales Element jedes Bikeparks.",
+    "variants": [
+      {
+        "level": "anfaenger",
+        "dimensions": { "length": 200, "width": 100, "height": 60, "radius": null, "angle": 25 },
+        "geometry": { "type": "jump", "lipHeight": 60, "lipAngle": 25, "lipFlatLength": 30, "jumpDistance": 2.0, "takeoffShape": "klothoide", "takeoffRadius": null },
+        "recommendedSpeed": { "min": 16, "max": 20 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 14 },
+            { "category": "tragwerk", "materialSlug": "laerche-joch-80x160", "quantity": 24 },
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-mittel", "quantity": 5 },
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-mittel", "quantity": 6 },
+            { "category": "belag", "materialSlug": "laerche-riemen-27x120", "quantity": 28 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 8 },
+            { "category": "armierung", "materialSlug": "stahlwinkel-l50", "quantity": 4 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 5 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 8 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 8 }
+          ],
+          "notes": "Inkl. Anlieger Eingang/Ausgang. Ohne Erdarbeiten."
+        },
+        "safetyClearance": { "sides": 2, "behind": 4, "notes": "Bypass-Linie für absolute Anfänger empfohlen." },
+        "characterNote": "60 cm Lippe, 25° Tisch — vergibt Speed-Fehler grosszügig."
+      },
+      {
+        "level": "mittel",
+        "dimensions": { "length": 300, "width": 100, "height": 90, "radius": null, "angle": 30 },
+        "geometry": { "type": "jump", "lipHeight": 90, "lipAngle": 30, "lipFlatLength": 30, "jumpDistance": 3.0, "takeoffShape": "klothoide", "takeoffRadius": null },
+        "recommendedSpeed": { "min": 19, "max": 23 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 18 },
+            { "category": "tragwerk", "materialSlug": "laerche-joch-80x160", "quantity": 36 },
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-mittel", "quantity": 6 },
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-mittel", "quantity": 8 },
+            { "category": "belag", "materialSlug": "laerche-riemen-27x120", "quantity": 42 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 14 },
+            { "category": "armierung", "materialSlug": "stahlwinkel-l50", "quantity": 5 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 7 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 10 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 14 }
+          ],
+          "notes": null
+        },
+        "safetyClearance": { "sides": 2.5, "behind": 5, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "fortgeschritten",
+        "dimensions": { "length": 450, "width": 100, "height": 120, "radius": null, "angle": 33 },
+        "geometry": { "type": "jump", "lipHeight": 120, "lipAngle": 33, "lipFlatLength": 30, "jumpDistance": 4.5, "takeoffShape": "klothoide", "takeoffRadius": null },
+        "recommendedSpeed": { "min": 23, "max": 27 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-120x120", "quantity": 22 },
+            { "category": "tragwerk", "materialSlug": "laerche-joch-100x240", "quantity": 48 },
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-gross", "quantity": 7 },
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-gross", "quantity": 10 },
+            { "category": "belag", "materialSlug": "laerche-riemen-27x120", "quantity": 56 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 20 },
+            { "category": "armierung", "materialSlug": "stahlwinkel-l50", "quantity": 6 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 10 },
+            { "category": "fundament", "materialSlug": "punktfundament-c25", "quantity": 8 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 20 }
+          ],
+          "notes": null
+        },
+        "safetyClearance": { "sides": 3, "behind": 6, "notes": "Sturzraum streng einhalten, kein Mobiliar im Auslauf." },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 80,
+      "workshopParts": ["Take-off-Modul mit CNC-Spanten", "Tisch-Modul", "Landungs-Modul mit CNC-Spanten", "Übergangs-Anlieger"],
+      "onSiteParts": ["6–8 Punktfundamente setzen", "Module verschrauben", "Erdarbeiten Übergänge"],
+      "cncAdvantage": true,
+      "cncNote": "Klothoid-Spanten sind das Schreinerei-Killerfeature. DIY-Bauer können das nicht reproduzieren."
+    },
+    "foundation": ["punktfundament", "krinner"],
+    "foundationNote": "Punktfundament für Take-off und Landung. Krinner für Tisch und Anlieger.",
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": true,
+      "edgeArmorNote": "Lippe und Knuckle mit Stahlwinkel L50×50×5 mm verzinkt armieren. Splittert sonst aus.",
+      "antiSlip": "epoxid-quarzsand",
+      "staticProofRequired": true,
+      "staticProofReason": "Spannweiten >2 m zwischen Pfosten, dynamische Belastung. SIA 265 Tragsicherheitsnachweis empfohlen.",
+      "bypassRecommended": true
+    },
+    "buildPhase": 4,
+    "references": ["Trailism Jump Building Guide", "Lee McCormack Pump Track Nation", "Hubbard/McNeil Sports Engineering 2015"],
+    "tags": ["sprung", "klothoide", "schreinerei-vorteil", "lernsprung"]
+  },
+
+  {
+    "slug": "step-up",
+    "number": "M09",
+    "name": "STEP-UP",
+    "nameLong": "Step-Up",
+    "category": "sprung",
+    "tagline": "Der sicherste echte Sprung. Höhere Landung reduziert Aufprall.",
+    "description": "Take-off niedrig, Landung höher — Höhenversatz reduziert die senkrechte Aufprallgeschwindigkeit (EFH-Logik). Take-off-Rampe 5° steiler als beim Tabletop, Δh 30–50 % der Sprungweite. Bypass-Linie für Anfänger zwingend, weil zu wenig Speed im Knuckle landet.",
+    "variants": [
+      {
+        "level": "mittel",
+        "dimensions": { "length": 280, "width": 100, "height": 80, "radius": null, "angle": 35 },
+        "geometry": { "type": "jump", "lipHeight": 80, "lipAngle": 35, "lipFlatLength": 30, "jumpDistance": 2.0, "takeoffShape": "klothoide", "takeoffRadius": null },
+        "recommendedSpeed": { "min": 18, "max": 22 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 16 },
+            { "category": "tragwerk", "materialSlug": "laerche-joch-80x160", "quantity": 30 },
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-mittel", "quantity": 6 },
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-mittel", "quantity": 8 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 12 },
+            { "category": "armierung", "materialSlug": "stahlwinkel-l50", "quantity": 4 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 6 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 10 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 12 }
+          ],
+          "notes": "Δh 0.8 m, Gap 2 m."
+        },
+        "safetyClearance": { "sides": 2.5, "behind": 5, "notes": "Bypass-Linie zwingend." },
+        "characterNote": "Sicherer als gleichgrosser Tabletop, weil v⊥ niedriger."
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 80,
+      "workshopParts": ["Take-off-Modul", "Landungs-Modul mit Plattform", "CNC-Spanten beidseitig"],
+      "onSiteParts": ["10 Krinner setzen", "Module verschrauben"],
+      "cncAdvantage": true,
+      "cncNote": null
+    },
+    "foundation": ["krinner", "punktfundament"],
+    "foundationNote": "Krinner reicht für Mittel-Variante. Bei Vergrösserung Punktfundament.",
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": true,
+      "edgeArmorNote": "Take-off-Lippe und Landungs-Vorderkante armieren.",
+      "antiSlip": "epoxid-quarzsand",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": true
+    },
+    "buildPhase": 4,
+    "references": ["Trailism Jump Guide", "Hubbard/McNeil Step-Up Geometry"],
+    "tags": ["sprung", "step-up", "schreinerei-vorteil"]
+  },
+
+  {
+    "slug": "long-jump",
+    "number": "M10",
+    "name": "LONG JUMP",
+    "nameLong": "Long Jump Ramp",
+    "category": "sprung",
+    "tagline": "Reichweite statt Höhe. Lange Float-Time, flacher Lip.",
+    "description": "Reichweiten-orientierter Sprung mit flachem Lip (28–30°) und langer Landung. Geschwindigkeitsbedarf höher als beim Tabletop. Zwischen Holz-Take-off und Holz-Landung optional eine Erdtafel — echte Gap-Variante anspruchsvoll.",
+    "variants": [
+      {
+        "level": "mittel",
+        "dimensions": { "length": 300, "width": 100, "height": 70, "radius": null, "angle": 28 },
+        "geometry": { "type": "jump", "lipHeight": 70, "lipAngle": 28, "lipFlatLength": 40, "jumpDistance": 3.5, "takeoffShape": "klothoide", "takeoffRadius": null },
+        "recommendedSpeed": { "min": 21, "max": 25 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 16 },
+            { "category": "tragwerk", "materialSlug": "laerche-joch-80x160", "quantity": 32 },
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-mittel", "quantity": 6 },
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-mittel", "quantity": 8 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 16 },
+            { "category": "armierung", "materialSlug": "stahlwinkel-l50", "quantity": 5 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 7 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 10 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 16 }
+          ],
+          "notes": "Ohne Erdtafel zwischen Take-off und Landung."
+        },
+        "safetyClearance": { "sides": 3, "behind": 5, "notes": null },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 70,
+      "workshopParts": ["Take-off-Modul mit CNC-Spanten", "Landungs-Modul"],
+      "onSiteParts": ["10 Krinner", "Module setzen", "Optional Erdtafel formen"],
+      "cncAdvantage": true,
+      "cncNote": null
+    },
+    "foundation": ["krinner", "punktfundament"],
+    "foundationNote": null,
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": true,
+      "edgeArmorNote": "Lippe armieren.",
+      "antiSlip": "epoxid-quarzsand",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": true
+    },
+    "buildPhase": 4,
+    "references": ["Trailism Jump Guide"],
+    "tags": ["sprung", "long-jump", "reichweite"]
+  },
+
+  {
+    "slug": "anlieger-90",
+    "number": "M11",
+    "name": "90° ANLIEGER",
+    "nameLong": "90° Anlieger aus Holz",
+    "category": "anlieger",
+    "tagline": "Skelettbauweise mit radial angeordneten Spanten. CNC-Vorteil pur.",
+    "description": "Holz-Anlieger als Skelettbauweise — radial angeordnete A-Rahmen-Spanten aus Lärche/Douglasie, parallele Stringer, sägeraue Lärchenbohlen. Segmentierung 3 × 30° für Pickup-Transport. Skill-Differenzierung über Radius (4 m → 2.5 m) und Bankwinkel (30° → 60°).",
+    "variants": [
+      {
+        "level": "anfaenger",
+        "dimensions": { "length": null, "width": 80, "height": 80, "radius": 400, "angle": 30 },
+        "geometry": { "type": "berm", "radius": 4, "bankAngle": 30, "bankAngleTheoretical": 36, "height": 80, "arcDegrees": 90, "spiralLength": 2.5 },
+        "recommendedSpeed": { "min": 15, "max": 20 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-80x120", "quantity": 18 },
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x160", "quantity": 25 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x200", "quantity": 28 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 4 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 6 }
+          ],
+          "notes": "R = 4 m, 30°, 80 cm hoch."
+        },
+        "safetyClearance": { "sides": 2, "behind": 1.5, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "mittel",
+        "dimensions": { "length": null, "width": 80, "height": 120, "radius": 300, "angle": 42 },
+        "geometry": { "type": "berm", "radius": 3, "bankAngle": 42, "bankAngleTheoretical": 50, "height": 120, "arcDegrees": 90, "spiralLength": 3 },
+        "recommendedSpeed": { "min": 20, "max": 28 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-80x120", "quantity": 22 },
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x160", "quantity": 32 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x200", "quantity": 38 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 5 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 8 }
+          ],
+          "notes": "R = 3 m, 42°, 1.2 m hoch."
+        },
+        "safetyClearance": { "sides": 2.5, "behind": 2, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "fortgeschritten",
+        "dimensions": { "length": null, "width": 80, "height": 150, "radius": 250, "angle": 58 },
+        "geometry": { "type": "berm", "radius": 2.5, "bankAngle": 58, "bankAngleTheoretical": 65, "height": 150, "arcDegrees": 90, "spiralLength": 3 },
+        "recommendedSpeed": { "min": 25, "max": 35 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-80x120", "quantity": 26 },
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x160", "quantity": 38 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x120", "quantity": 48 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 6 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 10 }
+          ],
+          "notes": "R = 2.5 m, 58°, 1.5 m hoch."
+        },
+        "safetyClearance": { "sides": 3, "behind": 2, "notes": "Ausgang öffnender Radius — keine Falle." },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 70,
+      "workshopParts": ["CNC-Spanten zugeschnitten", "3 × 30° Segmente vormontiert", "Stringer zugeschnitten"],
+      "onSiteParts": ["6–10 Krinner setzen", "Segmente verschrauben", "Belag finalisieren", "Übergänge"],
+      "cncAdvantage": true,
+      "cncNote": "8–12 unterschiedliche Spantenprofile — CNC zwingend für Konsistenz."
+    },
+    "foundation": ["krinner"],
+    "foundationNote": "Krinner alle 1.5 m. Bei dauerhafter Anlage Punktfundament.",
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "epoxid-quarzsand",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 4,
+    "references": ["IMBA Berm Standards", "Velosolutions Pump Track Standards"],
+    "tags": ["anlieger", "schreinerei-vorteil", "klothoide"]
+  },
+
+  {
+    "slug": "anlieger-180",
+    "number": "M12",
+    "name": "180° ANLIEGER",
+    "nameLong": "180° Anlieger / Kehre aus Holz",
+    "category": "anlieger",
+    "tagline": "Die Kehre. Statisch kritisch, fahrtechnisch der Test.",
+    "description": "180°-Kehren brauchen mind. 1.30 m Höhe und 55° Steilheit am oberen Rand (Velosolutions). 10–12 Spanten, 4–6 Segmente. Aussenwand bei 1.5 m als A-Bock mit Zugband. Drainage Pflicht. Hybrid-Variante (untere 50 cm Erde, oberer Bereich Holz) ist günstiger und oft besser.",
+    "variants": [
+      {
+        "level": "mittel",
+        "dimensions": { "length": null, "width": 80, "height": 130, "radius": 300, "angle": 50 },
+        "geometry": { "type": "berm", "radius": 3, "bankAngle": 50, "bankAngleTheoretical": 56, "height": 130, "arcDegrees": 180, "spiralLength": 2.5 },
+        "recommendedSpeed": { "min": 18, "max": 25 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-80x120", "quantity": 36 },
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x160", "quantity": 55 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x200", "quantity": 65 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 8 },
+            { "category": "fundament", "materialSlug": "punktfundament-c25", "quantity": 6 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 8 }
+          ],
+          "notes": "R = 3 m, 50°, 1.3 m hoch. Punktfundament für Aussenwand."
+        },
+        "safetyClearance": { "sides": 3, "behind": 2.5, "notes": "Aussenseite hinter Anlieger abpolstern oder Erdwall." },
+        "characterNote": "180°-Kehren produzieren statistisch die meisten Whiplash-Stürze."
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 60,
+      "workshopParts": ["4–6 Segmente à 30–45° vormontiert", "CNC-Spanten", "Stringer"],
+      "onSiteParts": ["Punktfundamente Aussenwand", "Krinner Innenseite", "Drainage", "Übergänge"],
+      "cncAdvantage": true,
+      "cncNote": null
+    },
+    "foundation": ["punktfundament", "krinner"],
+    "foundationNote": "Aussenwand zwingend Punktfundament — bei 1.3 m und 50° hohe Querkräfte.",
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "epoxid-quarzsand",
+      "staticProofRequired": true,
+      "staticProofReason": "Aussenwand >1.2 m mit Zugband-Konstruktion. SIA 265.",
+      "bypassRecommended": false
+    },
+    "buildPhase": 5,
+    "references": ["Velosolutions Pump Track Standards", "Allegra Trailbau"],
+    "tags": ["anlieger", "kehre", "statiknachweis", "phase-5"]
+  },
+
+  {
+    "slug": "wood-berm",
+    "number": "M13",
+    "name": "WOOD BERM",
+    "nameLong": "Wood Berm — offener gewölbter Anlieger",
+    "category": "anlieger",
+    "tagline": "Freistehende Holzschale. Schneller, bei Nässe rutschiger.",
+    "description": "Holzschale auf Stützstruktur ohne Erdfüllung — das optische Statement. Spantenform aus 4–6 Lagen 2×4 laminiert oder CNC-geschnitten. 10–20 % Geschwindigkeitsvorteil gegenüber Erdberm, dafür härter im Sturzfall und bei Nässe deutlich rutschiger (μ Holz nass 0.10 vs. Erde 0.5+). Genehmigungstechnisch als Holzbau bewilligungspflichtig.",
+    "variants": [
+      {
+        "level": "mittel",
+        "dimensions": { "length": null, "width": 100, "height": 100, "radius": 350, "angle": 38 },
+        "geometry": { "type": "berm", "radius": 3.5, "bankAngle": 38, "bankAngleTheoretical": 45, "height": 100, "arcDegrees": 90, "spiralLength": 2.5 },
+        "recommendedSpeed": { "min": 18, "max": 25 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-80x120", "quantity": 24 },
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x200", "quantity": 30 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 18 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 6 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 10 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 18 }
+          ],
+          "notes": "Antirutsch-Coating bei Wood Berm zwingend, sonst zu gefährlich bei Nässe."
+        },
+        "safetyClearance": { "sides": 2.5, "behind": 2, "notes": null },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 70,
+      "workshopParts": ["Spanten laminiert oder CNC", "Tragrahmensegmente bis 2.5 m"],
+      "onSiteParts": ["10 Krinner setzen", "Belag-Bretter mit Nummerierung", "Übergänge zu Trail/Erde"],
+      "cncAdvantage": true,
+      "cncNote": null
+    },
+    "foundation": ["krinner"],
+    "foundationNote": null,
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "epoxid-quarzsand",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 5,
+    "references": ["qcforc.org Wooden Berms"],
+    "tags": ["anlieger", "wood-berm", "statement", "rutschig-bei-naesse"]
+  },
+
+  {
+    "slug": "uebergangs-anlieger",
+    "number": "M14",
+    "name": "ÜBERGANG",
+    "nameLong": "Übergangs-Anlieger zur Sprungkombination",
+    "category": "anlieger",
+    "tagline": "Klothoide statt Kreis. Öffnender Ausgang führt zur Lippe.",
+    "description": "Spezielle Anlieger-Variante als Vorbereitung auf einen Sprung. Klothoide statt konstantem Kreis, öffnender Ausgangsradius (4 m → 6 m) für saubere Linie zum Lip. Höhe bewusst flach (0.8–1.2 m), weil zu hoher Berm Geschwindigkeit raubt. CNC-Vorfertigung der 8–12 unterschiedlichen Spantenprofile zwingend.",
+    "variants": [
+      {
+        "level": "mittel",
+        "dimensions": { "length": 400, "width": 80, "height": 100, "radius": 400, "angle": 35 },
+        "geometry": { "type": "berm", "radius": 4, "bankAngle": 35, "bankAngleTheoretical": 42, "height": 100, "arcDegrees": 90, "spiralLength": 3 },
+        "recommendedSpeed": { "min": 18, "max": 25 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-80x120", "quantity": 20 },
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x160", "quantity": 28 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x200", "quantity": 32 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 5 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 8 }
+          ],
+          "notes": "Öffnender Ausgangsradius 4→6 m."
+        },
+        "safetyClearance": { "sides": 2.5, "behind": 1.5, "notes": "Geht direkt in den Sprung-Take-off über." },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 80,
+      "workshopParts": ["CNC-Spanten alle unterschiedlich", "Segmente vormontiert", "Übergang zur Sprungrampe als nahtlose Holzverbindung"],
+      "onSiteParts": ["Krinner setzen", "Verschrauben"],
+      "cncAdvantage": true,
+      "cncNote": "8–12 unterschiedliche Spantenprofile — CNC ist Marios Schreinerei-Disziplin."
+    },
+    "foundation": ["krinner"],
+    "foundationNote": null,
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "epoxid-quarzsand",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 4,
+    "references": ["Velosolutions Klothoid Standards"],
+    "tags": ["anlieger", "klothoide", "schreinerei-vorteil", "uebergang"]
+  },
+
+  {
+    "slug": "wallride",
+    "number": "M15",
+    "name": "WALLRIDE",
+    "nameLong": "Wallride",
+    "category": "transition",
+    "tagline": "Die Schwerkraft kurz vergessen. Apex-Winkel macht den Skill.",
+    "description": "Vertikale Wand mit Übergangsradius am Fuss. Skill-Differenzierung primär über Apex-Winkel — Anfänger 60–65°, Fortgeschritten bis 90°. Tragposten alle 1.0–1.2 m, Diagonalstreben hinten zur Aufnahme der Querkraft, gebogene Sparren parallel zur Fahrtrichtung, Belag aus 21 mm Siebdruck mit Antirutsch.",
+    "variants": [
+      {
+        "level": "anfaenger",
+        "dimensions": { "length": 450, "width": null, "height": 190, "radius": 200, "angle": 65 },
+        "geometry": null,
+        "recommendedSpeed": { "min": 18, "max": 25 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 24 },
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-50x150", "quantity": 32 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 9 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 4 },
+            { "category": "fundament", "materialSlug": "punktfundament-c25", "quantity": 5 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 9 }
+          ],
+          "notes": "Curved Wallride S nach Velosolutions: 4.5 m × 1.9 m, 65° Apex."
+        },
+        "safetyClearance": { "sides": 2, "behind": 2, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "mittel",
+        "dimensions": { "length": 600, "width": null, "height": 190, "radius": 200, "angle": 75 },
+        "geometry": null,
+        "recommendedSpeed": { "min": 22, "max": 28 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 30 },
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-50x150", "quantity": 42 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 12 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 5 },
+            { "category": "fundament", "materialSlug": "punktfundament-c25", "quantity": 6 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 12 }
+          ],
+          "notes": "Curved Wallride M nach Velosolutions: 6.0 m × 1.9 m, 75° Apex."
+        },
+        "safetyClearance": { "sides": 2.5, "behind": 2.5, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "fortgeschritten",
+        "dimensions": { "length": 900, "width": null, "height": 280, "radius": 200, "angle": 88 },
+        "geometry": null,
+        "recommendedSpeed": { "min": 25, "max": 32 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-120x120", "quantity": 42 },
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-50x150", "quantity": 64 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 25 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 8 },
+            { "category": "fundament", "materialSlug": "punktfundament-c25", "quantity": 10 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 25 }
+          ],
+          "notes": "Curved Wallride L: 9.0 m × 2.8 m, 88° Apex. Statiknachweis zwingend."
+        },
+        "safetyClearance": { "sides": 3, "behind": 3, "notes": null },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 70,
+      "workshopParts": ["CNC-Sparren", "Bock-Module", "Belag-Platten zugeschnitten"],
+      "onSiteParts": ["5–10 Punktfundamente", "Tragposten setzen", "Belag montieren", "Crib Wall hinter Wand bei Hanglage"],
+      "cncAdvantage": true,
+      "cncNote": "CNC-Sparren = klarer Qualitätsvorteil gegenüber DIY."
+    },
+    "foundation": ["punktfundament"],
+    "foundationNote": "Punktfundament 40×40×80 cm an jedem Tragposten.",
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "epoxid-quarzsand",
+      "staticProofRequired": true,
+      "staticProofReason": "Vertikale Wand mit dynamischer Querbelastung. SIA 265 zwingend.",
+      "bypassRecommended": false
+    },
+    "buildPhase": 5,
+    "references": ["Velosolutions Wallride Standards", "SIA 265"],
+    "tags": ["transition", "wallride", "schreinerei-vorteil", "phase-5", "statiknachweis"]
+  },
+
+  {
+    "slug": "northshore-gerade",
+    "number": "M16",
+    "name": "NORTHSHORE GERADE",
+    "nameLong": "Northshore-Brücke gerade",
+    "category": "northshore",
+    "tagline": "Holz im Wald. Erhöht über Boden, Pfostenabstand max. 2.5 m.",
+    "description": "Gerade Holz-Brücke auf Pfosten — Belagbreite Anfänger 90–120 cm bei 30–60 cm Höhe, Mittel 60–80 cm bei 60–120 cm, Fortgeschritten 40–60 cm bei 1.0–1.8 m. IMBA empfiehlt keine Geländer (würden Lenker streifen), stattdessen ab 1.0 m einen Curb-Bordstein, ab 1.8 m Geländer.",
+    "variants": [
+      {
+        "level": "anfaenger",
+        "dimensions": { "length": 800, "width": 100, "height": 50, "radius": null, "angle": null },
+        "geometry": { "type": "northshore", "beltWidth": 100, "beamHeight": 50, "totalLength": 8, "hasCurve": false, "curveRadius": null, "pillarSpacingMax": 250 },
+        "recommendedSpeed": { "min": 8, "max": 14 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x200", "quantity": 16 },
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 8 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x200", "quantity": 20 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 2.5 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 4 }
+          ],
+          "notes": "8 m gerade, 60 cm hoch."
+        },
+        "safetyClearance": { "sides": 1.5, "behind": 1.5, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "mittel",
+        "dimensions": { "length": 800, "width": 60, "height": 100, "radius": null, "angle": null },
+        "geometry": { "type": "northshore", "beltWidth": 60, "beamHeight": 100, "totalLength": 8, "hasCurve": false, "curveRadius": null, "pillarSpacingMax": 250 },
+        "recommendedSpeed": { "min": 10, "max": 16 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x200", "quantity": 16 },
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 12 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x120", "quantity": 24 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 3 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 4 }
+          ],
+          "notes": "8 m, 1 m hoch — Curb-Bordstein 50×100 mm seitlich."
+        },
+        "safetyClearance": { "sides": 2, "behind": 2, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "fortgeschritten",
+        "dimensions": { "length": 1000, "width": 40, "height": 150, "radius": null, "angle": null },
+        "geometry": { "type": "northshore", "beltWidth": 40, "beamHeight": 150, "totalLength": 10, "hasCurve": false, "curveRadius": null, "pillarSpacingMax": 250 },
+        "recommendedSpeed": { "min": 12, "max": 18 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x200", "quantity": 20 },
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-120x120", "quantity": 16 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x120", "quantity": 30 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 4 },
+            { "category": "fundament", "materialSlug": "punktfundament-c25", "quantity": 5 }
+          ],
+          "notes": "10 m, 1.5 m hoch."
+        },
+        "safetyClearance": { "sides": 2.5, "behind": 2.5, "notes": null },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 100,
+      "workshopParts": ["Brückensegmente à 2.4 m oder 3.0 m", "Belag und Stringer fertig", "Querverbinder vorgebohrt"],
+      "onSiteParts": ["Pfosten setzen", "Segmente aufsetzen und verbinden"],
+      "cncAdvantage": false,
+      "cncNote": null
+    },
+    "foundation": ["krinner", "punktfundament"],
+    "foundationNote": null,
+    "safety": {
+      "guardrailRequiredFrom": 180,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "streckmetall",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 2,
+    "references": ["IMBA Northshore Standards", "EN 14974"],
+    "tags": ["northshore", "schreinerei-100", "verbindungsstueck"]
+  },
+
+  {
+    "slug": "northshore-kurve",
+    "number": "M17",
+    "name": "NORTHSHORE KURVE",
+    "nameLong": "Northshore-Brücke mit Kurve",
+    "category": "northshore",
+    "tagline": "CNC-Stringer machen den Unterschied.",
+    "description": "Kurven-Variante der Northshore-Brücke. CNC-geschnittene Stringer ergeben präzise Geometrie. Belagbreite je nach Skill 100/60/40 cm, Kurvenradius 3–5 m. Schreinerei-Vorteil pur — DIY-Bauer können solche Kurven nicht sauber reproduzieren.",
+    "variants": [
+      {
+        "level": "mittel",
+        "dimensions": { "length": 600, "width": 60, "height": 80, "radius": 400, "angle": null },
+        "geometry": { "type": "northshore", "beltWidth": 60, "beamHeight": 80, "totalLength": 6, "hasCurve": true, "curveRadius": 4, "pillarSpacingMax": 250 },
+        "recommendedSpeed": { "min": 10, "max": 16 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "laerche-stringer-80x200", "quantity": 14 },
+            { "category": "tragwerk", "materialSlug": "laerche-pfosten-100x100", "quantity": 12 },
+            { "category": "belag", "materialSlug": "laerche-belag-40x120", "quantity": 22 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 3 },
+            { "category": "fundament", "materialSlug": "krinner-u68-600", "quantity": 5 }
+          ],
+          "notes": "6 m mit 4 m Kurvenradius."
+        },
+        "safetyClearance": { "sides": 2, "behind": 2, "notes": null },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 90,
+      "workshopParts": ["CNC-Stringer mit Kurvenkontur", "Segmente vormontiert"],
+      "onSiteParts": ["Pfosten setzen", "Aufsetzen, Verbinden"],
+      "cncAdvantage": true,
+      "cncNote": "Kurvensegmente = Schreinerei-USP."
+    },
+    "foundation": ["krinner", "punktfundament"],
+    "foundationNote": null,
+    "safety": {
+      "guardrailRequiredFrom": 180,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "streckmetall",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 2,
+    "references": ["IMBA Northshore Standards"],
+    "tags": ["northshore", "kurve", "schreinerei-vorteil"]
+  },
+
+  {
+    "slug": "roll-in",
+    "number": "M18",
+    "name": "ROLL-IN",
+    "nameLong": "Roll-In / Einstiegsrampe",
+    "category": "transition",
+    "tagline": "Stationäre Auffahrt. CNC-Bögen geben Präzision.",
+    "description": "Stationäre Auffahrtsrampe für erhöhte Skinnies und Drops. Seitenwangen aus 18–21 mm Siebdruck, Sparren Lärche 40×95 mm im Abstand 30–40 cm, Belag aus 12 mm Birken-Multiplex feucht gezwungen oder 18 mm Siebdruck mit Kerf-Cuts. Marine-Anti-Slip mit Sand zwingend.",
+    "variants": [
+      {
+        "level": "anfaenger",
+        "dimensions": { "length": 250, "width": 80, "height": 35, "radius": 200, "angle": 15 },
+        "geometry": null,
+        "recommendedSpeed": { "min": 5, "max": 10 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "siebdruck-18", "quantity": 1.5 },
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-50x150", "quantity": 6 },
+            { "category": "belag", "materialSlug": "multiplex-birke-12", "quantity": 2 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 1 },
+            { "category": "fundament", "materialSlug": "erdspiess-stahl", "quantity": 4 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 2 }
+          ],
+          "notes": "2.5 m / 35 cm / 15° / R 2 m."
+        },
+        "safetyClearance": { "sides": 1, "behind": 1.5, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "mittel",
+        "dimensions": { "length": 300, "width": 80, "height": 70, "radius": 250, "angle": 20 },
+        "geometry": null,
+        "recommendedSpeed": { "min": 8, "max": 14 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "siebdruck-21", "quantity": 2 },
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-50x150", "quantity": 8 },
+            { "category": "belag", "materialSlug": "siebdruck-18", "quantity": 2.4 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 1.2 },
+            { "category": "fundament", "materialSlug": "erdspiess-stahl", "quantity": 4 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 2.4 }
+          ],
+          "notes": "3 m / 70 cm / 20° / R 2.5 m."
+        },
+        "safetyClearance": { "sides": 1.5, "behind": 2, "notes": null },
+        "characterNote": null
+      },
+      {
+        "level": "fortgeschritten",
+        "dimensions": { "length": 380, "width": 80, "height": 110, "radius": 300, "angle": 28 },
+        "geometry": null,
+        "recommendedSpeed": { "min": 10, "max": 16 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "siebdruck-21", "quantity": 3 },
+            { "category": "tragwerk", "materialSlug": "douglasie-sparren-50x150", "quantity": 10 },
+            { "category": "belag", "materialSlug": "siebdruck-18", "quantity": 3 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 1.5 },
+            { "category": "fundament", "materialSlug": "erdspiess-stahl", "quantity": 4 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 3 }
+          ],
+          "notes": "3.8 m / 110 cm / 28° / R 3 m mit kurzem Steilauslauf."
+        },
+        "safetyClearance": { "sides": 2, "behind": 2.5, "notes": null },
+        "characterNote": null
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 100,
+      "workshopParts": ["Seitenwangen-Bögen aus Vollmaterial CNC", "Sparren zugesägt", "Belag mit Antirutsch"],
+      "onSiteParts": ["Platzieren", "Bodenanker", "Übergang"],
+      "cncAdvantage": true,
+      "cncNote": "CNC-Sparren-Bögen sind der grosse Schreinerei-Vorteil. Reproduzierbar."
+    },
+    "foundation": ["lose", "erdspiess"],
+    "foundationNote": null,
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "epoxid-quarzsand",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 2,
+    "references": ["Cutlaps Roll-In Plans"],
+    "tags": ["transition", "roll-in", "schreinerei-100", "transportabel"]
+  },
+
+  {
+    "slug": "pumptrack-roller",
+    "number": "M19",
+    "name": "PUMPTRACK ROLLER",
+    "nameLong": "Pumptrack-Roller (Holz)",
+    "category": "pumptrack",
+    "tagline": "Marios USP. Holz-Pumptrack ist selten und transportabel.",
+    "description": "Roller-Module aus Holz nach Lee-McCormack-Goldstandard: Höhe 30 cm, Crest-zu-Crest 3.0 m, Verhältnis 10:1. Form als Sinuswelle. Schreinerei kann Sinus-Schablonen aus MDF herstellen — perfekte Reproduzierbarkeit zwischen Modulen. Modulgrösse 3 m × 1.8 m × 0.4 m, lose auf Splittbett.",
+    "variants": [
+      {
+        "level": "anfaenger",
+        "dimensions": { "length": 300, "width": 180, "height": 30, "radius": null, "angle": null },
+        "geometry": { "type": "pumptrack", "rollerHeight": 30, "crestToCrest": 300, "bermRadius": null, "bermAngle": null },
+        "recommendedSpeed": { "min": 8, "max": 16 },
+        "bom": {
+          "items": [
+            { "category": "tragwerk", "materialSlug": "kvh-fichte-100x100", "quantity": 8 },
+            { "category": "tragwerk", "materialSlug": "multiplex-spanten-cnc-mittel", "quantity": 6 },
+            { "category": "belag", "materialSlug": "siebdruck-21", "quantity": 5.4 },
+            { "category": "verbindung", "materialSlug": "spax-a4-mix", "quantity": 2 },
+            { "category": "fundament", "materialSlug": "erdspiess-stahl", "quantity": 4 },
+            { "category": "oberflaeche", "materialSlug": "antirutsch-quarzsand", "quantity": 5.4 }
+          ],
+          "notes": "Goldstandard-Roller 30/300/10:1."
+        },
+        "safetyClearance": { "sides": 1.5, "behind": 1.5, "notes": "Übergänge zwischen Modulen müssen nahtlos sein — Gummiprofil-Abdeckung." },
+        "characterNote": "Lee McCormack: 'Every flat spot is a dead spot.'"
+      }
+    ],
+    "prefab": {
+      "workshopPercent": 100,
+      "workshopParts": ["Sinus-Schablone aus MDF", "CNC-Spanten", "Tragrahmen vormontiert", "Belag mit Antirutsch"],
+      "onSiteParts": ["Splittbett vorbereiten", "Module verketten"],
+      "cncAdvantage": true,
+      "cncNote": "Sinus-Reproduzierbarkeit zwischen Modulen ist der USP. Bei Erd-Pumptracks unerreichbar."
+    },
+    "foundation": ["splittbett", "erdspiess"],
+    "foundationNote": "Splittbett oder Beton-Fundamentplatte mit Bodenanker.",
+    "safety": {
+      "guardrailRequiredFrom": null,
+      "edgeArmor": false,
+      "edgeArmorNote": null,
+      "antiSlip": "epoxid-quarzsand",
+      "staticProofRequired": false,
+      "staticProofReason": null,
+      "bypassRecommended": false
+    },
+    "buildPhase": 3,
+    "references": ["Lee McCormack Pump Track Nation", "Trailism Roller Design", "Velosolutions Pumptrack Standards"],
+    "tags": ["pumptrack", "schreinerei-vorteil", "transportabel", "marios-usp"]
+  }
+]

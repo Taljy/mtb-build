@@ -1,0 +1,52 @@
+[
+  {
+    "number": 1,
+    "title": "BASIS",
+    "subtitle": "Sandbox-Module für Werkstattprozesse",
+    "description": "Billige, modulare Module zum Einspielen der Werkstatt-Prozesse und Kalibrieren des Skill-Niveaus. Skinnies, Wippe, Low Flat Box und Mini Kicker decken bereits Balance, Transition und erste Sprung-Erfahrung ab. Niedriges Risiko, hohe Lernkurve.",
+    "moduleSlugs": ["skinny", "wippe", "low-flat-box", "mini-kicker"],
+    "estimatedWeeks": 4,
+    "cumulativeBudgetChf": { "min": 1841, "max": 3629 },
+    "skillCoverage": ["Balance", "Linienführung", "Gewichtsverlagerung", "Erste Sprünge"]
+  },
+  {
+    "number": 2,
+    "title": "VERBINDEN",
+    "subtitle": "Northshore und Roll-In als Trail-Verbinder",
+    "description": "Northshore-Brücken (gerade und Kurve) sowie Roll-In schaffen die Wege zwischen den Modulen aus Phase 1. Die Module wachsen zu einer befahrbaren Anlage zusammen. CNC-Vorteil bei Kurven-Stringer beginnt sich zu zeigen.",
+    "moduleSlugs": ["northshore-gerade", "northshore-kurve", "roll-in"],
+    "estimatedWeeks": 5,
+    "cumulativeBudgetChf": { "min": 5114, "max": 8098 },
+    "skillCoverage": ["Höhenangst-Abbau", "Trail-Flow", "Linienauswahl"]
+  },
+  {
+    "number": 3,
+    "title": "PUMPEN & DROPPEN",
+    "subtitle": "Holz-Pumptrack als USP, erste echte Drops",
+    "description": "Marios USP-Modul: der Holz-Pumptrack als Oval (6 Roller + 2 Berms). Sichtbar, transportabel, marktwirtschaftlich differenzierend. Parallel die ersten echten Drops bis 60 cm — Bypass für Anfänger zwingend.",
+    "moduleSlugs": ["pumptrack-roller", "drop-30", "drop-60"],
+    "estimatedWeeks": 4,
+    "cumulativeBudgetChf": { "min": 8379, "max": 11363 },
+    "skillCoverage": ["Pumping-Technik", "Drop-Landung", "Speed-Management"]
+  },
+  {
+    "number": 4,
+    "title": "FLOW",
+    "subtitle": "Tabletop-Linie mit Anliegern und Step-Up",
+    "description": "Die Flow-Linie als Krönung: Tabletop in 3 Skill-Varianten, eingebettet in 90°-Anlieger und Übergangs-Anlieger zur sauberen Anbindung. Step-Up und Long Jump erweitern die Sprung-Disziplinen. CNC-Spanten machen den Unterschied zur DIY-Konkurrenz.",
+    "moduleSlugs": ["tabletop", "anlieger-90", "uebergangs-anlieger", "step-up", "long-jump"],
+    "estimatedWeeks": 8,
+    "cumulativeBudgetChf": { "min": 25770, "max": 34313 },
+    "skillCoverage": ["Sprung-Geometrie", "Berm-Speed", "Linien-Kombination", "Flow"]
+  },
+  {
+    "number": 5,
+    "title": "ADVANCED",
+    "subtitle": "Wallride, 180°-Kehre, 100-cm-Drop, Wood Berm",
+    "description": "Die teuren, statisch anspruchsvollen Module mit Pflicht zum SIA-265-Statiknachweis. Hier zeigt die Schreinerei ihren Vorteil maximal: präzise CNC-Sparren für Wallride, segmentierte 180°-Kehre, exakte Wood-Berm-Geometrie. Phase 5 kann pausiert werden, wenn Phase 1–4 reichen.",
+    "moduleSlugs": ["wallride", "anlieger-180", "drop-100", "wood-berm"],
+    "estimatedWeeks": 10,
+    "cumulativeBudgetChf": { "min": 39843, "max": 52358 },
+    "skillCoverage": ["Wallride-Technik", "Kehre", "High Drop", "Komplette Linie"]
+  }
+]
