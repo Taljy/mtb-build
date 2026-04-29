@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Eyebrow from "@/components/Eyebrow";
 import StatLine from "@/components/StatLine";
 import HairlineCard from "@/components/HairlineCard";
+import HeroSheet from "@/components/HeroSheet";
+import SheetCarousel from "@/components/SheetCarousel";
 
 const doors = [
   {
@@ -33,6 +35,29 @@ const phases = [
   { label: "PHASE 5 · BUILD-PLAN",              done: false },
 ];
 
+const carouselSheets = [
+  {
+    src: "/sheets/kicker-brand.jpeg",
+    alt: "DREK Brand-Sheet — BIG MTB KICKER mit Side View, Front View und Material-Übersicht",
+    caption: "BRAND-SHEET · BIG MTB KICKER",
+  },
+  {
+    src: "/sheets/kicker-seitenansicht.jpeg",
+    alt: "MTB Kicker Seitenansicht — technische Zeichnung Maßstab 1:10",
+    caption: "SEITENANSICHT · MASSSTAB 1:10",
+  },
+  {
+    src: "/sheets/kicker-3d.jpeg",
+    alt: "MTB Kicker 3D-Ansicht — isometrische Perspektive ohne Maßstab",
+    caption: "3D-ANSICHT · OHNE MASSSTAB",
+  },
+  {
+    src: "/sheets/kicker-grundriss.jpeg",
+    alt: "MTB Kicker Grundriss — Draufsicht Maßstab 1:10",
+    caption: "GRUNDRISS · MASSSTAB 1:10",
+  },
+];
+
 const today = new Date().toLocaleDateString("de-CH", {
   day: "2-digit",
   month: "2-digit",
@@ -54,7 +79,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 2. Drei Türen ────────────────────────────────────── */}
+      {/* ── 2. Hero-Sheet — Material-Liste ───────────────────── */}
+      <HeroSheet
+        src="/sheets/kicker-material.jpeg"
+        alt="MTB Kicker Material-Liste — vollständige Stückliste mit Holz-Struktur, Fahrsurface, Schrauben und Werkzeug"
+        eyebrow="BEISPIEL-MODUL · MTB KICKER"
+        subtitle="So sieht ein Modul-Datenblatt aus."
+      />
+
+      {/* ── 3. Drei Türen ────────────────────────────────────── */}
       <section className="py-16 border-t border-rule">
         <div className="grid grid-cols-1 gap-px md:grid-cols-3 border border-rule">
           {doors.map(({ num, title, desc, to }) => (
@@ -78,7 +111,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── 3. Status-Block ──────────────────────────────────── */}
+      {/* ── 4. Sheet-Carousel — 4 Ansichten ─────────────────── */}
+      <SheetCarousel sheets={carouselSheets} />
+
+      {/* ── 5. Status-Block ──────────────────────────────────── */}
       <section className="py-16 border-t border-rule">
         <Eyebrow>BUILD-STATUS</Eyebrow>
         <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:justify-between">

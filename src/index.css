@@ -146,6 +146,14 @@
    Custom Utilities
    ═══════════════════════════════════════════════════════════ */
 @layer utilities {
+    .scrollbar-hide {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
     .font-display {
         font-family: var(--font-display);
         text-transform: uppercase;

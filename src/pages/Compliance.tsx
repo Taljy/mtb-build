@@ -4,6 +4,7 @@ import ComplianceSection from "@/components/ComplianceSection";
 import ChecklistItem from "@/components/ChecklistItem";
 import DecisionTree from "@/components/DecisionTree";
 import StaticProofMatrix from "@/components/StaticProofMatrix";
+import { BfuLink } from "@/components/BfuLink";
 
 const insuranceSteps = [
   {
@@ -148,10 +149,11 @@ export default function Compliance() {
           sobald Dritte — Familienmitglieder, Mitarbeitende, Gäste — Zugang haben. Das ist
           bei Marios Schreinerei-Bikepark der Normalfall.
         </p>
-        <div className="border border-rule px-4 py-3 mt-4">
+        <div className="border border-rule px-4 py-3 mt-4 flex flex-col gap-1">
           <p className="font-mono text-xs tracking-[0.14em] text-asphalt">
-            QUELLE — bfu.ch · Fachdokumentation 2.011 · Kostenlos als PDF
+            QUELLE — Fachdokumentation 2.011 · Kostenlos als PDF
           </p>
+          <BfuLink />
         </div>
       </ComplianceSection>
 

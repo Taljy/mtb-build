@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# DREK sheets — originals stay local, only optimized versions committed
+Inspiration/
