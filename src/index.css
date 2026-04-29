@@ -182,4 +182,74 @@
         letter-spacing: 0.04em;
         line-height: 0.92;
     }
+
+    /* ── Print utilities (hidden on screen, active in @media print) ── */
+    .print-break-before { break-before: page; }
+    .print-avoid-break  { break-inside: avoid; }
+    .print-hide         { display: none !important; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   @media print — A4 Portrait, DREK-Tokens auf Schwarz/Weiss
+   ═══════════════════════════════════════════════════════════ */
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 15mm 12mm;
+    }
+
+    /* Remap colour tokens → neutral print palette */
+    :root {
+        --color-vermillion:      #000000;
+        --color-vermillion-deep: #000000;
+        --color-brand:           #000000;
+        --color-brand-hover:     #000000;
+        --color-paper:           #ffffff;
+        --color-paper-deep:      #ffffff;
+        --color-rule:            #000000;
+        --color-rule-soft:       #888888;
+        --color-asphalt:         #333333;
+        --color-concrete:        #666666;
+        --color-pitch:           #000000;
+        --color-ink:             #000000;
+        --ring:                  #000000;
+        --destructive:           #000000;
+    }
+
+    /* Hairlines always visible at 0.5pt */
+    * {
+        border-color: #888 !important;
+    }
+    .border-rule,
+    [class*="border-rule"] {
+        border-color: #000 !important;
+        border-width: 0.5pt !important;
+    }
+
+    /* Typography: pt units for paper */
+    html { font-size: 10pt; }
+    h1   { font-size: 22pt !important; }
+    h2   { font-size: 16pt !important; }
+    h3   { font-size: 13pt !important; }
+
+    /* Strip backgrounds/shadows that waste ink */
+    body {
+        background: white !important;
+    }
+    .shadow,
+    [class*="shadow-"] {
+        box-shadow: none !important;
+    }
+
+    /* Page-break helpers */
+    .print-break-before { break-before: page !important; }
+    .print-avoid-break  { break-inside: avoid !important; }
+
+    /* Hide screen-only chrome */
+    .print-hide { display: none !important; }
+
+    /* Suppress URL-appending for internal links */
+    a[href^="/"]::after {
+        content: none !important;
+    }
 }

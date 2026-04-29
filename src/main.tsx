@@ -15,6 +15,7 @@ import Material from "./pages/Material";
 import Compliance from "./pages/Compliance";
 import Plan from "./pages/Plan";
 import PrintSheet from "./pages/PrintSheet";
+import PrintPlan from "./pages/PrintPlan";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       { path: "compliance", element: <Compliance /> },
       { path: "plan", element: <Plan /> },
     ],
+  },
+  {
+    path: "/print/plan",
+    element: <PrintPlan />,
   },
   {
     path: "/print/:slug",
