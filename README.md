@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+# DREK MTB-BUILD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Field Manual für den privaten MTB-Bikepark — mtb-build.drek.ch
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 + TypeScript (strict)
+- Vite + Rolldown
+- Tailwind v4 (`@theme` tokens, kein config-file)
+- shadcn/ui mit Base UI primitives
+- React Router v6
 
-## React Compiler
+## Design-System
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+DREK HELL v1.1 — paper `#F2EDE4`, ink `#0D0D0D`, vermillion `#E34234`.
+Keine Radius (`--radius: 0rem`), keine Schatten.
 
-## Expanding the ESLint configuration
+## Seiten
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Route | Seite |
+|---|---|
+| `/` | Home & Build-Status |
+| `/module` | Modulkatalog |
+| `/module/:slug` | Moduldetail mit BOM-Tabelle |
+| `/geometrie` | Geometrie-Hub |
+| `/geometrie/sprung` | Sprung-Rechner (parabolische Trajektorie) |
+| `/geometrie/landung` | Landungs-Rechner (EFH-Verifikation) |
+| `/geometrie/anlieger` | Anlieger-Rechner (Banking-Winkel) |
+| `/material` | Material & Budgetkonfigurator |
+| `/compliance` | Recht & Sicherheit |
+| `/plan` | Aufbau-Sequenz |
+| `/print/:slug` | Druckblatt Modul (A4) |
+| `/print/plan` | Druckblatt Bauplan (A4) |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Dev
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev        # http://localhost:5176
+npm run build
+npm run preview
 ```

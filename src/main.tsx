@@ -1,26 +1,31 @@
-import { StrictMode } from "react";
+import { lazy, Suspense, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
 import App from "./App";
-import Home from "./pages/Home";
-import ModuleList from "./pages/ModuleList";
-import ModuleDetail from "./pages/ModuleDetail";
-import GeometryHub from "./pages/GeometryHub";
-import JumpCalculator from "./pages/JumpCalculator";
-import LandingCalculator from "./pages/LandingCalculator";
-import BermCalculator from "./pages/BermCalculator";
-import Material from "./pages/Material";
-import Compliance from "./pages/Compliance";
-import Plan from "./pages/Plan";
-import PrintSheet from "./pages/PrintSheet";
-import PrintPlan from "./pages/PrintPlan";
+
+const Home            = lazy(() => import("./pages/Home"));
+const ModuleList      = lazy(() => import("./pages/ModuleList"));
+const ModuleDetail    = lazy(() => import("./pages/ModuleDetail"));
+const GeometryHub     = lazy(() => import("./pages/GeometryHub"));
+const JumpCalculator  = lazy(() => import("./pages/JumpCalculator"));
+const LandingCalculator = lazy(() => import("./pages/LandingCalculator"));
+const BermCalculator  = lazy(() => import("./pages/BermCalculator"));
+const Material        = lazy(() => import("./pages/Material"));
+const Compliance      = lazy(() => import("./pages/Compliance"));
+const Plan            = lazy(() => import("./pages/Plan"));
+const PrintSheet      = lazy(() => import("./pages/PrintSheet"));
+const PrintPlan       = lazy(() => import("./pages/PrintPlan"));
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <Suspense fallback={<div className="flex min-h-screen items-center justify-center font-mono text-xs tracking-[0.18em] uppercase text-asphalt">LADE…</div>}>
+        <App />
+      </Suspense>
+    ),
     children: [
       { index: true, element: <Home /> },
       { path: "module", element: <ModuleList /> },
@@ -36,11 +41,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/print/plan",
-    element: <PrintPlan />,
+    element: (
+      <Suspense fallback={null}>
+        <PrintPlan />
+      </Suspense>
+    ),
   },
   {
     path: "/print/:slug",
-    element: <PrintSheet />,
+    element: (
+      <Suspense fallback={null}>
+        <PrintSheet />
+      </Suspense>
+    ),
   },
 ]);
 
